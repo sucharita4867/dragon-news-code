@@ -1,8 +1,16 @@
-import { FaEye, FaStar, FaRegStar, FaShareAlt, FaRegBookmark } from "react-icons/fa";
+import {
+  FaEye,
+  FaStar,
+  FaRegStar,
+  FaShareAlt,
+  FaRegBookmark,
+} from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
   const {
+    id,
     title,
     author,
     thumbnail_url,
@@ -66,12 +74,13 @@ const NewsCard = ({ news }) => {
         <p className="text-sm text-gray-600">
           {isExpanded ? details : shortText}
           {!isExpanded && (
-            <button
+            <Link
+              to={`/news-details/${id}`}
               onClick={() => setIsExpanded(true)}
               className="text-blue-600 font-semibold hover:underline ml-1"
             >
               Read More
-            </button>
+            </Link>
           )}
         </p>
 
