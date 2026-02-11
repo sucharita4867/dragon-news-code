@@ -10,7 +10,6 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    // console.log(e.target);
     const form = e.target;
     const displayName = form.name.value;
     if (displayName.length < 5) {
@@ -21,7 +20,6 @@ const Register = () => {
     const photoURl = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
-    // console.log({ displayName, photoURl, email, password });
     createUser(email, password)
       .then((result) => {
         const user = result.user;
