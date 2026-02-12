@@ -67,7 +67,6 @@ const Register = () => {
               placeholder="Email"
               required
             />
-            {/* password */}
             <label className="label">Password</label>
             <input
               type="password"
