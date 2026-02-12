@@ -52,7 +52,7 @@ const Register = () => {
               required
             />
             {nameError && <p className="text-xs text-error">{nameError}</p>}
-            {/* Photo URl */}
+           
             <label className="label">Photo URl</label>
             <input
               type="text"
