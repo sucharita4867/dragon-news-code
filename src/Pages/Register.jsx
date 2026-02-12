@@ -42,7 +42,6 @@ const Register = () => {
         </h2>
         <form onSubmit={handleRegister} className="card-body">
           <fieldset className="fieldset">
-           
             <label className="label">Name</label>
             <input
               type="text"
@@ -52,7 +51,7 @@ const Register = () => {
               required
             />
             {nameError && <p className="text-xs text-error">{nameError}</p>}
-           
+
             <label className="label">Photo URl</label>
             <input
               type="text"
@@ -60,7 +59,6 @@ const Register = () => {
               className="input"
               placeholder="Photo URl"
             />
-            {/* email */}
             <label className="label">Email</label>
             <input
               type="email"
